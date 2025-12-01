@@ -1,3 +1,4 @@
-#!/usr/bin/execlineb -p
+#!/command/with-contenv bashio
+echo "Starting Traefik..."
 exec traefik --configFile=/data/traefik/traefik.yml
 

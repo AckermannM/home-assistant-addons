@@ -1,12 +1,12 @@
 name: Traefik
-version: 1.0.8
+version: 1.0.9
 slug: traefik
 description: |
   Traefik is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy.
 arch:
   - amd64
 startup: system
-init: true
+init: false
 stage: stable
 boot: auto
 url: https://github.com/AckermannM/home-assistant-addons/tree/main/traefik-addon
