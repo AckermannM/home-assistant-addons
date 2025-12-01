@@ -1,3 +1,4 @@
+# This file is managed by the addon, and will be overwritten on update
 api:
   dashboard: false
 
