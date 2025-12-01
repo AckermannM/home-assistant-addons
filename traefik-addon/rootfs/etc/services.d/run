@@ -1,0 +1,3 @@
+#!/usr/bin/execlineb -p
+exec traefik --configFile=/data/traefik/traefik.yml
+

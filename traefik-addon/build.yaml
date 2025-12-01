@@ -1,0 +1,5 @@
+# https://github.com/hassio-addons/addon-base
+build_from:
+  amd64: ghcr.io/hassio-addons/base/amd64:19.0.0
+args:
+  TRAEFIK_VERSION: 3.6.2

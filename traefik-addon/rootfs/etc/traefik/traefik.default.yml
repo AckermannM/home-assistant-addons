@@ -1,0 +1,30 @@
+api:
+  dashboard: false
+
+global:
+  checkNewVersion: true
+  sendAnonymousUsage: false
+
+entryPoints:
+  web:
+    address: ":80"
+    http:
+      redirections:
+        entryPoint:
+          to: websecure
+          scheme: https
+  websecure:
+    address: ":443"
+
+certificatesResolvers:
+  __RESOLVER_NAME__:
+    acme:
+      email: "ha@muspell.heim"
+      storage: "/data/traefik/acme.json"
+      caServer: "__CA_SERVER__"
+      httpChallenge:
+        entryPoint: web
+
+providers:
+  file:
+    directory: "/data/traefik/dynamic"
