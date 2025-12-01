@@ -1,9 +1,6 @@
 #!/command/with-contenv bashio
-echo "=== DEBUG === Listing /config/traefik.d:"
-ls -l /config/traefik.d || echo "!!! Directory missing !!!"
-
-echo "=== DEBUG === Listing /config:"
-ls -l /config
+echo "=== DEBUG === Listing /data:"
+ls -l /data
 
 echo "=== DEBUG === Starting Traefik..."
 exec traefik --configFile=/data/traefik/traefik.yml
