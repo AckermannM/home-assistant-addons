@@ -2,6 +2,9 @@
 echo "=== DEBUG === Listing /data:"
 ls -l /data
 
+echo "=== DEBUG === Parsing /data/traefik/traefik.yml:"
+cat /data/traefik/traefik.yml
+
 echo "=== DEBUG === Starting Traefik..."
 exec traefik --configFile=/data/traefik/traefik.yml
 

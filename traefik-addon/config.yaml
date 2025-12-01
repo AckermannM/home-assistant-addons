@@ -1,5 +1,5 @@
 name: Traefik
-version: 1.0.11
+version: 1.0.12
 slug: traefik
 description: |
   Traefik is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy.
@@ -31,3 +31,4 @@ schema:
   caRootPath: str
 environment:
   LEGO_CA_CERTIFICATES: /data/traefik/certs/root_ca.crt
+  S6_LOGGING: 1
