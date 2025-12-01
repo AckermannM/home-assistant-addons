@@ -31,4 +31,3 @@ schema:
   caRootPath: str
 environment:
   LEGO_CA_CERTIFICATES: /data/traefik/certs/root_ca.crt
-  S6_LOGGING: 1
