@@ -34,4 +34,4 @@ schema:
   caServer: str
   caRootPath: str
 environment:
-  - LEGO_CA_CERTIFICATES=/etc/traefik/root_ca.crt
+  LEGO_CA_CERTIFICATES: /etc/traefik/root_ca.crt
