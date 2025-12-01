@@ -27,4 +27,4 @@ certificatesResolvers:
 
 providers:
   file:
-    directory: "/data/traefik/dynamic"
+    directory: "/config/traefik.d"

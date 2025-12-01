@@ -5,6 +5,7 @@ CONFIG="/data/traefik/traefik.yml"
 # Create directories
 mkdir -p /data/traefik/dynamic
 mkdir -p /data/traefik/certs
+mkdir -p /config/traefik.d
 
 # If config does not yet exist, copy default
 if [ ! -f "$CONFIG" ]; then
