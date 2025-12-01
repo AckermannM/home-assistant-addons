@@ -9,7 +9,7 @@ startup: system
 init: false
 stage: stable
 boot: auto
-url: https://github.com/AckermannM/home-assistant-addons/tree/master/traefik
+url: https://github.com/AckermannM/home-assistant-addons/tree/main/traefik-addon
 ports:
   80/tcp: 80
   443/tcp: 443
