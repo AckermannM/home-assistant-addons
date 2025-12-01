@@ -5,10 +5,7 @@ CONFIG="/data/traefik/traefik.yml"
 # Create directories
 mkdir -p /data/traefik/certs
 
-# If config does not yet exist, copy default
-if [ ! -f "$CONFIG" ]; then
-  cp /etc/traefik/traefik.default.yml "$CONFIG"
-fi
+cp /etc/traefik/traefik.default.yml "$CONFIG"
 
 # Inject user values
 RESOLVER=$(bashio::config "resolverName")

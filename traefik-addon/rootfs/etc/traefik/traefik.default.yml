@@ -28,6 +28,3 @@ certificatesResolvers:
 providers:
   file:
     directory: "/config/traefik.d"
-
-log:
-  level: DEBUG
