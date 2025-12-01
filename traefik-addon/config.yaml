@@ -1,5 +1,5 @@
 name: Traefik
-version: 1.0.4
+version: 1.0.5
 slug: traefik
 description: |
   Traefik is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy.
@@ -16,11 +16,6 @@ ports:
 ports_description:
   80/tcp: HTTP
   443/tcp: HTTPS
-ingress: true
-ingress_entry: dashboard/
-hassio_role: default
-hassio_api: true
-panel_icon: mdi:earth-arrow-right
 map:
   - config
   - share
