@@ -8,6 +8,7 @@ RUN wget -q -O /tmp/traefik.tar.gz \
   "https://github.com/traefik/traefik/releases/download/v${TRAEFIK_VERSION}/traefik_v${TRAEFIK_VERSION}_linux_amd64.tar.gz" \
   && tar xzf /tmp/traefik.tar.gz -C /usr/local/bin/ traefik \
   && chmod +x /usr/local/bin/traefik \
+  && mkdir -p /etc/traefik \
   && rm -f /tmp/*
 
 COPY rootfs /

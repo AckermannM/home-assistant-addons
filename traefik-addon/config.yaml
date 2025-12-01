@@ -22,12 +22,16 @@ hassio_role: default
 hassio_api: true
 panel_icon: mdi:earth-arrow-right
 map:
-  - config
+  - config:rw
   - share
   - ssl:rw
 options:
   resolverName: ""
   caServer: ""
+  caRootPath: ""
 schema:
   resolverName: str
   caServer: str
+  caRootPath: str
+environment:
+  - LEGO_CA_CERTIFICATES=/etc/traefik/root_ca.crt
