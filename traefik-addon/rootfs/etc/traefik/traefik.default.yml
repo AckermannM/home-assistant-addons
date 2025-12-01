@@ -30,4 +30,4 @@ providers:
     directory: "/config/traefik.d"
 
 log:
-  level: WARN
+  level: DEBUG
