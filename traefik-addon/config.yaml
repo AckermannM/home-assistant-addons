@@ -1,12 +1,11 @@
 name: Traefik
-version: 1.0.5
+version: 1.0.6
 slug: traefik
 description: |
   Traefik is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy.
 arch:
   - amd64
 startup: system
-init: false
 stage: stable
 boot: auto
 url: https://github.com/AckermannM/home-assistant-addons/tree/main/traefik-addon
@@ -17,7 +16,7 @@ ports_description:
   80/tcp: HTTP
   443/tcp: HTTPS
 map:
-  - config
+  - config:rw
   - share
   - ssl:rw
 options:
@@ -29,4 +28,4 @@ schema:
   caServer: str
   caRootPath: str
 environment:
-  LEGO_CA_CERTIFICATES: /etc/traefik/root_ca.crt
+  LEGO_CA_CERTIFICATES: /data/traefik/certs/root_ca.crt
