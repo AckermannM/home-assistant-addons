@@ -1,3 +1,6 @@
 #!/command/with-contenv bashio
+echo "Contents of /data/traefik/certs/:"
+ls /data/traefik/certs/
+echo "Using Traefik config:"
 LEGO_CA_CERTIFICATES=/data/traefik/certs/root_ca.crt exec traefik --configFile=/data/traefik/traefik.yml
 
