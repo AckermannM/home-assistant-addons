@@ -23,6 +23,7 @@ certificatesResolvers:
       email: "ha@muspell.heim"
       storage: "/data/traefik/acme.json"
       caServer: "__CA_SERVER__"
+      caCertificates: "/data/traefik/certs/root_ca.crt"
       httpChallenge:
         entryPoint: web
 

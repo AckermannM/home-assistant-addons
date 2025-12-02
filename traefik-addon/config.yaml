@@ -1,8 +1,8 @@
 name: Traefik
-version: 1.0.13
+version: 1.0.14
 slug: traefik
 description: |
-  Traefik is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy.
+  Traefik is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy. This addon enables the usage of a custom CA (like Step-CA).
 arch:
   - amd64
 startup: system
@@ -29,5 +29,3 @@ schema:
   resolverName: str
   caServer: str
   caRootPath: str
-environment:
-  LEGO_CA_CERTIFICATES: /data/traefik/certs/root_ca.crt
